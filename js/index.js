@@ -53,7 +53,8 @@ const getAllTasks = async () => {
 }
 
 const updateTaskDragged = async (id, destiny) =>{
-    console.log("Prueba");
+    console.log("Si abres la consola, verás que necesitas agarrar y soltar dos veces.");
+    console.log("Eso es un bug!")
     let response = await fetch("https://foltrestfirstapp.herokuapp.com/api/task/all")
     let data = await response.json();
     for(let i in data){
