@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/index.css">
+    <title>TaskClassifier</title>
+</head>
+<body class="body fix">
+    <div class="mainTitle">
+        <h1 class="title light">Task Classifier</h1>
+    </div>
+    <div id="container" class="container">
+        <div class="row cont">
+            <div class="column first">
+                <div class="card text-center mainCard">
+                    <h5 class="card-header newTcolor light">Create new tasks</h5>
+                        <div class="card-body">
+                            <div>
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label">Title</label>
+                                    <input class="form-control" id="title" placeholder="What are you doing?">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleFormControlTextarea1" class="form-label">Description</label>
+                                    <textarea class="form-control" id="description" rows="2" placeholder="Tell us some details!"></textarea>
+                                 </div>
+                                <button id="addBtn" class="btn btn-primary">Add Task</button>
+                            </div>
+                        </div>
+                    </div>
+                <div>
+            </div>
+        </div>
+        
+            <div class="column">
+                <div class="background">
+                    <h3 class="title light">To do</h3>
+                </div>
+                <div class="list-group" id="toDo">
+
+                </div>
+            </div>
+            <div class="column">
+                <div class="background">
+                    <h3 class="title light">Doing</h3>
+                </div>
+                <div id="doing">
+
+                </div>
+            </div>
+            <div class="column">
+                <div class="background">
+                    <h3 class="title light">Done</h3>
+                </div>
+                <div id="done">
+
+                </div>
+            </div>
+        
+        </div>
+    </div>
+
+   
+</body>
+</html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+<script src="https://kit.fontawesome.com/08a0e42bd7.js" crossorigin="anonymous"></script>
+<script src="js/sortable.js"></script>
+<script src="js/Task.js"></script>
+<script src="js/index.js"></script>
